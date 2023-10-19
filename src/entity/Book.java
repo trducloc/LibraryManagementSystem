@@ -1,5 +1,6 @@
 package entity;
 
+
 public class Book implements Displayable {
     private String idBook;
     private String bookName;
@@ -24,7 +25,6 @@ public class Book implements Displayable {
         this.categoryBook = book.getCategoryBook();
         this.status = book.getStatus();
         this.quantity = book.getQuantity();
-
     }
 
     public Book(String idBook, String bookName, String author, String categoryBook, String status, String quantity) {
@@ -70,6 +70,13 @@ public class Book implements Displayable {
         return quantity;
     }
 
+    public String getQuantityBorrow() {
+        return quantityBorrow;
+    }
+
+    public void setQuantityBorrow(String quantityBorrow) {
+        this.quantityBorrow = quantityBorrow;
+    }
 
     @Override
     public String toString() {
@@ -99,5 +106,4 @@ public class Book implements Displayable {
         this.status = Book.getStatus();
         this.quantity = Book.getQuantity();
     }
-
 }

@@ -57,7 +57,7 @@ public class BookLogic {
         ListBook list = bookDat.getList();
         NodeBook target = list.getHead();
         while (target != null) {
-            if (target.getInfo().getBookName().contains(bookName))
+            if (target.getInfo().getBookName().toLowerCase().contains(bookName.toLowerCase()))
                 result.insertTail(target.getInfo());
             target = target.getNext();
         }

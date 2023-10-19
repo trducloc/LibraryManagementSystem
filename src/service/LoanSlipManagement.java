@@ -240,7 +240,7 @@ public class LoanSlipManagement {
             target = target.getNext();
         }
 
-        System.out.println("-------------------------------------------------------------------------------------------------\n");
+        System.out.println("-----------------------------------------------------------------------------------------------------------\n");
     }
 
     public void sortByQuantityBorrowed() {

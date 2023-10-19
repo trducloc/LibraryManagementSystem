@@ -107,6 +107,7 @@ public class Menu {
             System.out.println("|   1. Xem danh sách sách.             |");
             System.out.println("|   2. Tìm kiếm sách.                  |");
             System.out.println("|   3. Mượn sách.                      |");
+            System.out.println("|   4. Trả sách.                       |");
             System.out.println("|   0. Đăng xuất.                      |");
             System.out.println("----------------------------------------");
             int functionChoice = chooseFunction3();
@@ -120,6 +121,9 @@ public class Menu {
                     break;
                 case 3:
                     borrowerManagement.borrowBook();
+                    break;
+                case 4:
+//                    borrowerManagement.giveBookBack();
                     break;
                 case 0:
                     System.exit(0);
@@ -222,12 +226,12 @@ public class Menu {
         do {
             try {
                 functionChoice = new Scanner(System.in).nextInt();
-                if (functionChoice >= 0 && functionChoice <= 3) {
+                if (functionChoice >= 0 && functionChoice <= 4) {
                     break;
                 }
-                System.out.print("Chức năng không hợp lệ, vui lòng lựa chọn (từ 0-3): ");
+                System.out.print("Chức năng không hợp lệ, vui lòng lựa chọn (từ 0-4): ");
             } catch (InputMismatchException e) {
-                System.out.print("Chức năng không hợp lệ, vui lòng lựa chọn (từ 0-3): ");
+                System.out.print("Chức năng không hợp lệ, vui lòng lựa chọn (từ 0-4): ");
             }
         } while (true);
         return functionChoice;

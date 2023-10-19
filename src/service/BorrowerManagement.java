@@ -1,5 +1,6 @@
 package service;
 
+import java.time.LocalDate;
 import logic.BookLogic;
 import logic.BorrowerLogic;
 import entity.Book;
@@ -26,7 +27,7 @@ public class BorrowerManagement {
             System.out.println("|   4. Xem danh sách.                   |");
             System.out.println("|   5. Sắp xếp theo tên.                |");
             System.out.println("|   6. Tìm kiếm.                        |");
-            System.out.println("|   9. Quay lại menu chính.             |");
+            System.out.println("|   7. Quay lại menu chính.             |");
             System.out.println("|   0. Đăng xuất.                       |");
             System.out.println("-----------------------------------------");
             int functionChoice = chooseFunction1();
@@ -49,7 +50,7 @@ public class BorrowerManagement {
                 case 6:
                     search();
                     break;
-                case 9:
+                case 7:
                     Menu.adminMenu();
                     break;
                 case 0:
@@ -291,7 +292,7 @@ public class BorrowerManagement {
                 case 2:
                     searchByAddress();
                     break;
-                case 9:
+                case 3:
                     menu();
                     break;
                 case 0:
@@ -375,12 +376,16 @@ public class BorrowerManagement {
             idBook = new Scanner(System.in).nextLine();
         } while (idBook.isEmpty());
 
-        if (bookLogic.check(idBook)) {  // Kiểm tra sách có tồn tại trong danh sách hay không
+        if (bookLogic.check(idBook)) {  // kiem tra sach co ton tai trong danh sach hay khong
 
             System.out.print("Nhập số lượng muốn mượn: ");
             quantityBorrow = new Scanner(System.in).nextLine();
 
             Book book = new Book(idBook, quantityBorrow);
+
+            LocalDate today = LocalDate.now();
+            LocalDate returnDate = today.plusDays(7);
+            System.out.println("Hạn phải trả sách: " + returnDate);
             bookLogic.fix(book);
         } else {
             System.out.println("Không tồn tại đầu sách có mã: " + idBook);
@@ -410,12 +415,12 @@ public class BorrowerManagement {
         do {
             try {
                 functionChoice = new Scanner(System.in).nextInt();
-                if (functionChoice >= 0 && functionChoice <= 9) {
+                if (functionChoice >= 0 && functionChoice <= 7) {
                     break;
                 }
-                System.out.print("Chức năng không hợp lệ, vui lòng lựa chọn (từ 0-9): ");
+                System.out.print("Chức năng không hợp lệ, vui lòng lựa chọn (từ 0-7): ");
             } catch (InputMismatchException e) {
-                System.out.print("Chức năng không hợp lệ, vui lòng lựa chọn (từ 0-9): ");
+                System.out.print("Chức năng không hợp lệ, vui lòng lựa chọn (từ 0-7): ");
             }
         } while (true);
         return functionChoice;

@@ -7,6 +7,8 @@ import list.ListBook.NodeBook;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import static service.Menu.memberMenu;
+
 
 public class BookManagement {
     private BookLogic bookLogic = new BookLogic();
@@ -289,7 +291,7 @@ public class BookManagement {
                     searchByName();
                     break;
                 case 3:
-                    menu();
+                    memberMenu();
                     break;
                 case 0:
                     System.exit(0);

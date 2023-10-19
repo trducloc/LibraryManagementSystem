@@ -46,7 +46,6 @@ public class Borrower implements Displayable {
     }
 
     public void display() {
-
         System.out.printf("%-15s | %-20S | %-25s | %-40s | %-30s |\n",
                 getId(),
                 getName(),

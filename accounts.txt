@@ -1,5 +1,0 @@
-alo:alo
-ALO:ALO
-123456:123456
-tranducloc01:Loclinh01
-tranducloc02:Loclinh02

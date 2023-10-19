@@ -59,7 +59,7 @@ public class BorrowerLogic {
         ListBorrower list = borrowerDat.getList();
         NodeBorrower tg = list.getHead();
         while (tg != null) {
-            if (tg.getInfo().getName().contains(name))
+            if (tg.getInfo().getName().toLowerCase().contains(name.toLowerCase()))
                 result.insertTail(tg.getInfo());
             tg = tg.getNext();
         }
@@ -71,7 +71,7 @@ public class BorrowerLogic {
         ListBorrower list = borrowerDat.getList();
         NodeBorrower tg = list.getHead();
         while (tg != null) {
-            if (tg.getInfo().getAddress().contains(address))
+            if (tg.getInfo().getAddress().toLowerCase().contains(address.toLowerCase()))
                 result.insertTail(tg.getInfo());
             tg = tg.getNext();
         }

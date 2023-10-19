@@ -1,8 +1,5 @@
-123,Conan,Aoyama Gōshō,Truyện tranh ,10,khả dụng 
-124,Doraemon,fujiko,truyen tranh,20,Kha dung
-125,Giai tich,Nguyen Van A,SGK,15,Kha dung
-126,Van hoc,Nguyen Dinh Thi,SGK,8,Kha dung
-127,Lich su ,Giang Vo,Giang Vo,12,70%
-666,null,null,null,null,null
-999,Lol,lien minh,gamme,99,con
-888,Alo,alo,alo,10,Con
+111,null,null,null,null,null
+222,Doraemon,fujiko,truyen tranh,20,Kha dung
+333,Giai tich,Nguyen Van A,SGK,15,Kha dung
+444,Van hoc,Nguyen Dinh Thi,SGK,8,Kha dung
+555,Lich su ,Giang Vo,Giang Vo,12,Kha dung
