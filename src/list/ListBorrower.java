@@ -14,19 +14,6 @@ public class ListBorrower {
         return head;
     }
 
-//    public NodeBorrower getTail() {
-//        return tail;
-//    }
-//
-//    public void insertHead(Borrower borrower) {
-//        NodeBorrower newNode = new NodeBorrower(borrower);
-//        if (head == null) {
-//            head = tail = newNode;
-//        } else {
-//            newNode.setNext(head); // Gán newNode vào đầu danh sách.
-//            head = newNode;           // cập nhật lại vị trí đầu của danh sách.
-//        }
-//    }
 
     public void insertTail(Borrower borrower) {
         NodeBorrower newNode = new NodeBorrower(borrower);
@@ -36,27 +23,6 @@ public class ListBorrower {
             tail = newNode;             // cap nhat lai vi tri cuoi cua danh sach
         }
     }
-//    public void deleteNode(NodeBorrower nodeBorrower) {
-//        NodeBorrower tg = head;
-//        NodeBorrower t = tg;
-//        while (tg != null) {
-//            if (tg == nodeBorrower) break;
-//            else {
-//                t = tg;
-//                tg = tg.getNext();
-//            }
-//        }
-//
-//        if (tg == null) return; // Không tồn tại nodenguoimuon.
-//        if (t != null)          // Tồn tại
-//        {
-//            t.setNext(tg.getNext());
-//            tg = null;
-//        } else // nếu là đầu danh sách.
-//        {
-//            head = tg.getNext();
-//        }
-//    }
 
     public void removeNode(NodeBorrower nodeBorrower) {
         NodeBorrower tg = head;
@@ -127,7 +93,6 @@ public class ListBorrower {
     public class NodeBorrower {
         private Borrower info;
         private NodeBorrower next;
-
 
         public NodeBorrower(Borrower info) {
             this.info = info;

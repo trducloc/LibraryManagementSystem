@@ -92,7 +92,7 @@ public class BookManagement {
                     System.out.println("Đã tồn tại mã: " + idBook);
                 } else if (!idBook.matches("\\d{3}")) {
                     System.out.println("Mã sách phải là một số nguyên có 3 chữ số.");
-                    isExisting = true; // Sử dụng để tiếp tục vòng lặp do-while
+                    isExisting = true;
                 }
             } while (isExisting || idBook.equals(""));
 
@@ -140,7 +140,6 @@ public class BookManagement {
 
 
     public void fix() {
-        Scanner scanner = new Scanner(System.in);
         System.out.println();
         System.out.println("-----------------------------------------");
         System.out.println("|           SỬA THÔNG TIN SÁCH          |");
@@ -153,22 +152,22 @@ public class BookManagement {
             idBook = new Scanner(System.in).nextLine();
         } while (idBook.isEmpty());
 
-        if (bookLogic.check(idBook)) {  // Kiểm tra sách có tồn tại trong danh sách hay không
+        if (bookLogic.check(idBook)) {  // kiem tra sach co ton tai trong danh sach hay ko
             System.out.println("NHẬP VÀO THÔNG TIN MỚI CHO SÁCH MANG MÃ " + idBook);
             System.out.print("Nhập tên sách: ");
-            bookName = scanner.nextLine();
+            bookName = new Scanner(System.in).nextLine();
 
             System.out.print("Nhập thể loại: ");
-            categoryBook = scanner.nextLine();
+            categoryBook = new Scanner(System.in).nextLine();
 
             System.out.print("Nhập tên tác giả: ");
-            author = scanner.nextLine();
+            author = new Scanner(System.in).nextLine();
 
             System.out.print("Nhập số lượng: ");
-            quantity = scanner.nextLine();
+            quantity = new Scanner(System.in).nextLine();
 
             System.out.print("Nhập trạng thái: ");
-            status = scanner.nextLine();
+            status = new Scanner(System.in).nextLine();
             Book book = new Book(idBook, bookName, categoryBook, author, quantity, status);
             bookLogic.fix(book);
         } else {
@@ -236,7 +235,6 @@ public class BookManagement {
             target.getInfo().display();
             target = target.getNext();
         }
-
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------\n");
     }
 

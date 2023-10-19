@@ -14,9 +14,6 @@ public class ListLoanSlip {
         return head;
     }
 
-//    public NodeLoanSlip getTail() {
-//        return tail;
-//    }
 
     public void insertTail(LoanSlip loanSlip) {
         NodeLoanSlip newNode = new NodeLoanSlip(loanSlip);

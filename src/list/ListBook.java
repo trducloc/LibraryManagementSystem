@@ -14,19 +14,19 @@ public class ListBook {
         return head;
     }
 
-//    public NodeBook getTail() {
-//        return tail;
-//    }
-//
-//    public void insertHead(Book book) {
-//        NodeBook newNode = new NodeBook(book);
-//        if (head == null) {
-//            head = tail = newNode;
-//        } else {
-//            newNode.setNext(head); // Gán newNode vào đầu danh sách.
-//            head = newNode;           // cập nhật lại vị trí đầu của danh sách.
-//        }
-//    }
+    public NodeBook getTail() {
+        return tail;
+    }
+
+    public void insertHead(Book book) {
+        NodeBook newNode = new NodeBook(book);
+        if (head == null) {
+            head = tail = newNode;
+        } else {
+            newNode.setNext(head); // gan node vao dau danh danh
+            head = newNode;           // cap nhat lai vi tri dau danh sach
+        }
+    }
 
     public void insertTail(Book book) {
         NodeBook newNode = new NodeBook(book);
@@ -39,8 +39,8 @@ public class ListBook {
     }
 
     public void removeNode(NodeBook nodeBook) {
-        NodeBook tg = head;
-        NodeBook t = tg;
+        NodeBook tg = head; // duyet qua danh sach
+        NodeBook t = tg; // luu gia tri cua nodebook truoc tg
         while (tg != null) {
             if (tg == nodeBook) {
                 break;
