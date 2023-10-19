@@ -2,7 +2,7 @@ package entity;
 
 import java.util.Scanner;
 
-public class Borrower extends Person {
+public class Person implements Displayable {
     private String id;
     private String name;
     private String email;
@@ -29,7 +29,7 @@ public class Borrower extends Person {
         return phone;
     }
 
-    public Borrower() {
+    public Person() {
         this.id = "";
         this.name = "";
         this.address = "";
@@ -37,7 +37,7 @@ public class Borrower extends Person {
         this.phone = "";
     }
 
-    public Borrower(String id, String name,String address, String email, String phone) {
+    public Person(String id, String name,String address, String email, String phone) {
         this.id = id;
         this.name = name;
         this.address = address;

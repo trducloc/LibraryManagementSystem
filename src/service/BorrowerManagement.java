@@ -95,7 +95,7 @@ public class BorrowerManagement {
                     System.out.println("Đã tồn tại mã: " + id);
                 } else if (!id.matches("\\d{3}")) {
                     System.out.println("Mã người mượn phải là một số nguyên có 3 chữ số.");
-                    isExisting = true; // Sử dụng để tiếp tục vòng lặp do-while
+                    isExisting = true;
                 }
             } while (isExisting || id.equals(""));
 
