@@ -1,16 +1,11 @@
-
 package data;
-
 
 import entity.Borrower;
 import list.ListBorrower;
-
 import java.io.*;
-
 
 public class BorrowerDat {
     private static final String fileName = "Borrower.txt";
-
 
     public ListBorrower getList() {
         ListBorrower list = new ListBorrower();

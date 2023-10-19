@@ -3,33 +3,31 @@ package entity;
 import java.util.Scanner;
 
 public class Borrower implements Displayable {
-    private String id, name, email, address, phone;
-
+    private String id;
+    private String name;
+    private String email;
+    private String address;
+    private String phone;
 
     public String getAddress() {
         return address;
     }
 
-
     public String getId() {
         return id;
     }
-
 
     public String getName() {
         return name;
     }
 
-
     public String getEmail() {
         return email;
     }
 
-
     public String getPhone() {
         return phone;
     }
-
 
     public Borrower() {
         this.id = "";
@@ -74,8 +72,6 @@ public class Borrower implements Displayable {
         this.phone = loanSlip.getPhone();
 
     }
-
-
 
 }
 

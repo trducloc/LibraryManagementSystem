@@ -4,7 +4,6 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
-import java.util.Scanner;
 
 import static service.Menu.*;
 
@@ -144,6 +143,4 @@ public class Account {
             System.out.println("Không thể đọc tệp tin tài khoản.");
         }
     }
-
-
 }

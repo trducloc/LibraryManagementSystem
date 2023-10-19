@@ -1,12 +1,8 @@
 package data;
 
-
-import entity.Borrower;
 import entity.LoanSlip;
 import list.ListLoanSlip;
-
 import java.io.*;
-
 
 public class LoanSlipDat {
 

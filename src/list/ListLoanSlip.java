@@ -2,7 +2,6 @@ package list;
 
 import entity.LoanSlip;
 
-
 public class ListLoanSlip {
     private NodeLoanSlip head, tail;
 
@@ -19,16 +18,6 @@ public class ListLoanSlip {
 //        return tail;
 //    }
 
-//    public void insertHead(LoanSlip loanSlip) {
-//        NodeLoanSlip newNode = new NodeLoanSlip(loanSlip);
-//        if (head == null) {
-//            head = tail = newNode;
-//        } else {
-//            newNode.setNext(head); // Gán newNode vào đầu danh sách.
-//            head = newNode;           // cập nhật lại vị trí đầu của danh sách.
-//        }
-//    }
-//
     public void insertTail(LoanSlip loanSlip) {
         NodeLoanSlip newNode = new NodeLoanSlip(loanSlip);
         if (head == null) head = tail = newNode;
@@ -37,28 +26,6 @@ public class ListLoanSlip {
             tail = newNode;               // Cập nhật lại vị trí cuối của danh sách.
         }
     }
-
-//    public void deleteNode(NodeLoanSlip nodeLoanSlip) {
-//        NodeLoanSlip tg = head;
-//        NodeLoanSlip t = tg;
-//        while (tg != null) {
-//            if (tg == nodeLoanSlip) break;
-//            else {
-//                t = tg;
-//                tg = tg.getNext();
-//            }
-//        }
-//
-//        if (tg == null) return; // Không tồn tại node.
-//        if (t != null)          // Tồn tại
-//        {
-//            t.setNext(tg.getNext());
-//            tg = null;
-//        } else // nếu là đầu danh sách.
-//        {
-//            head = tg.getNext();
-//        }
-//    }
 
     public void removeNode(NodeLoanSlip nodeLoanSlip) {
         NodeLoanSlip tg = head;
@@ -79,8 +46,6 @@ public class ListLoanSlip {
                 t.setNext(tg.getNext());
             }
         }
-
-
     }
 
     public void sortById() {
@@ -127,11 +92,6 @@ public class ListLoanSlip {
     public class NodeLoanSlip {
         private LoanSlip info;
         private NodeLoanSlip next;
-
-//        public NodeLoanSlip() {
-//            this.info = new LoanSlip();
-//            next = null;
-//        }
 
         public NodeLoanSlip(LoanSlip info) {
             this.info = info;

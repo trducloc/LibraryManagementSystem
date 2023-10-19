@@ -1,21 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package data;
-
-
 import entity.Book;
 import list.ListBook;
-import list.ListBook.NodeBook;
 
 import java.io.*;
 
-
 public class BookDat {
     private static final String fileName = "Book.txt";
-
 
     public ListBook getList() {
         ListBook list = new ListBook();
@@ -44,9 +34,6 @@ public class BookDat {
         }
         return list;
     }
-
-
-
 
     public void saveList(ListBook list) {
         ListBook.NodeBook target = list.getHead();

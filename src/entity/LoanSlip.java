@@ -1,7 +1,6 @@
 package entity;
 
 public class LoanSlip implements Displayable {
-
     private String idLoanSlip;
     private String id;
     private String idBook;
@@ -28,26 +27,21 @@ public class LoanSlip implements Displayable {
         return idLoanSlip;
     }
 
-
     public String getId() {
         return id;
     }
-
 
     public String getIdBook() {
         return idBook;
     }
 
-
     public String getBorrowedDay() {
         return borrowedDay;
     }
 
-
     public String getQuantityBorrowed() {
         return quantityBorrowed;
     }
-
 
     public void display() {
         System.out.printf("%-20s | %-20s | %-20s | %-20s| %-20s\n",

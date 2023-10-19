@@ -1,20 +1,18 @@
 package service;
-import logic.LoanSlipLogic;
+
 import logic.BookLogic;
 import logic.BorrowerLogic;
 import entity.Book;
 import entity.Borrower;
 import list.ListBorrower;
 import list.ListBorrower.NodeBorrower;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+
 
 public class BorrowerManagement {
-    BookLogic bookLogic = new BookLogic();
-    BorrowerLogic borrowerLogic = new BorrowerLogic();
+    private BookLogic bookLogic = new BookLogic();
+    private BorrowerLogic borrowerLogic = new BorrowerLogic();
 
     public void menu() {
         do {
@@ -149,9 +147,6 @@ public class BorrowerManagement {
         System.out.println("-----------------------------------------");
     }
 
-
-
-
     public void fix() {
         System.out.println();
         System.out.println("-----------------------------------------");
@@ -277,7 +272,6 @@ public class BorrowerManagement {
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------\n");
     }
 
-
     public void search() {
         do {
             System.out.println();
@@ -308,7 +302,6 @@ public class BorrowerManagement {
             System.out.println("\n---KẾT THÚC MENU TÌM KIẾM NGƯỜI MƯỢN---\n");
         } while (true);
     }
-
 
     public void searchByName() {
         System.out.println();
@@ -395,21 +388,6 @@ public class BorrowerManagement {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     private static int chooseFunction5() {
         System.out.print("Xin mời nhập lựa chọn: ");
         int functionChoice = 0;
@@ -442,7 +420,4 @@ public class BorrowerManagement {
         } while (true);
         return functionChoice;
     }
-
-
-
 }

@@ -5,10 +5,9 @@ import entity.Borrower;
 import list.ListBorrower;
 import list.ListBorrower.NodeBorrower;
 
-
 public class BorrowerLogic {
 
-    BorrowerDat borrowerDat = new BorrowerDat();
+    private BorrowerDat borrowerDat = new BorrowerDat();
 
     public ListBorrower getList() {
         return borrowerDat.getList();
@@ -78,10 +77,6 @@ public class BorrowerLogic {
         }
         return result;
     }
-
-
-
-
     public int totalBorrower() {
         int count = 0;
         NodeBorrower tg = borrowerDat.getList().getHead();
@@ -91,6 +86,5 @@ public class BorrowerLogic {
         }
         return count;
     }
-
 
 }

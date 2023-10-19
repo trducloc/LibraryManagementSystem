@@ -1,23 +1,15 @@
 package service;
 
-
-
 import logic.BookLogic;
 import entity.Book;
 import list.ListBook;
 import list.ListBook.NodeBook;
-
-import java.io.*;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import static service.Menu.memberMenu;
-
 
 public class BookManagement {
-//    private static final String FILE_PATH = "Book.txt";
-    BookLogic bookLogic = new BookLogic();
-
+    private BookLogic bookLogic = new BookLogic();
 
     public void menu() {
         do {
@@ -133,7 +125,7 @@ public class BookManagement {
 
 
             do {
-                System.out.print("Nhập trạng thái : ");
+                System.out.print("Nhập trạng thái: ");
                 status = new Scanner(System.in).nextLine();
             } while (status.equals(""));
 

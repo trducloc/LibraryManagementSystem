@@ -2,13 +2,12 @@ package logic;
 
 import data.LoanSlipDat;
 import entity.LoanSlip;
-import list.ListBorrower;
 import list.ListLoanSlip;
 import list.ListLoanSlip.NodeLoanSlip;
 
 public class LoanSlipLogic {
 
-    LoanSlipDat loanSlipDat = new LoanSlipDat();
+    private LoanSlipDat loanSlipDat = new LoanSlipDat();
 
     public ListLoanSlip getList() {
         return loanSlipDat.getList();
@@ -77,7 +76,6 @@ public class LoanSlipLogic {
         }
         return result;
     }
-
 
     public int totalLoanSlip() {
         int count = 0;

@@ -2,27 +2,21 @@ package service;
 
 import logic.LoanSlipLogic;
 import entity.LoanSlip;
-import list.ListBook;
-import list.ListBorrower;
 import list.ListLoanSlip;
-import list.ListBorrower.NodeBorrower;
 import list.ListLoanSlip.NodeLoanSlip;
 import logic.BookLogic;
 import logic.BorrowerLogic;
-import entity.Book;
-
 import java.time.LocalDate;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.time.format.DateTimeFormatter;
 
 public class LoanSlipManagement {
-    LoanSlipLogic loanSlipLogic = new LoanSlipLogic();
-    BookLogic bookLogic = new BookLogic();
-    BorrowerLogic borrowerLogic= new BorrowerLogic();
-
-    LocalDate currentDate = LocalDate.now();
-    DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    private LoanSlipLogic loanSlipLogic = new LoanSlipLogic();
+    private BookLogic bookLogic = new BookLogic();
+    private BorrowerLogic borrowerLogic= new BorrowerLogic();
+    private LocalDate currentDate = LocalDate.now();
+    private DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     public void menu() {
         do {
             System.out.println();
@@ -150,7 +144,6 @@ public class LoanSlipManagement {
         System.out.println("-----------------------------------------");
         }
 
-
     public void fix() {
         System.out.println();
         System.out.println("-----------------------------------------");
@@ -207,7 +200,6 @@ public class LoanSlipManagement {
 
         System.out.println("\n-----------------------------------------------------------------------------\n");
     }
-
 
     public void delete() {
         System.out.println();
@@ -305,7 +297,6 @@ public class LoanSlipManagement {
         } while (true);
     }
 
-
     public void searchByBorrowedDay() {
         System.out.println();
         System.out.println("-----------------------------------------");
@@ -335,6 +326,7 @@ public class LoanSlipManagement {
         System.out.println("-------------------------------------------------------------------------------------------\n");
 
     }
+
     public void searchById() {
         System.out.println();
         System.out.println("-----------------------------------------");
@@ -364,6 +356,7 @@ public class LoanSlipManagement {
         }
         System.out.println("----------------------------------------------------------------------------------------------\n");
     }
+
     private static int chooseFunction1() {
         System.out.print("Xin mời nhập lựa chọn: ");
         int functionChoice = 0;

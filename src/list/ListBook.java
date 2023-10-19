@@ -3,8 +3,7 @@ package list;
 import entity.Book;
 
 public class ListBook {
-
-    NodeBook head, tail;
+    private NodeBook head, tail;
 
     public ListBook() {
         this.head = null;
@@ -34,11 +33,10 @@ public class ListBook {
         if (head == null) {
             head = tail = newNode;
         } else {
-            tail.setNext(newNode);      // Gán newNode vào cuối danh sách.
-            tail = newNode;               // Cập nhật lại vị trí cuối của danh sách.
+            tail.setNext(newNode);      // gan node vao cuoi danh danh
+            tail = newNode;             // cap nhat lai vi tri cuoi danh sach
         }
     }
-
 
     public void removeNode(NodeBook nodeBook) {
         NodeBook tg = head;
@@ -51,16 +49,14 @@ public class ListBook {
                 tg = tg.getNext();
             }
         }
-        if (tg == head) head = head.getNext(); // Nếu node ở đầu danh sách.
+        if (tg == head) head = head.getNext(); // neu node o dau danh sach
         else {
             if (tg.getNext() == null) {
-                t = null; // Nếu node ở cuối danh sách.
+                t = null; // neu node o cuoi danh sach
             } else {
                 t.setNext(tg.getNext());
             }
         }
-
-
     }
 
     public void sortByName() {
@@ -90,11 +86,6 @@ public class ListBook {
 
         private Book info;
         private NodeBook next;
-
-//        public NodeBook() {
-//            this.info = new Book();
-//            next = null;
-//        }
 
         public NodeBook(Book info) {
             this.info = info;

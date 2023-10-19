@@ -1,9 +1,6 @@
 package entity;
 
-
-
 public class Book implements Displayable {
-
     private String idBook;
     private String bookName;
     private String author;
@@ -19,6 +16,7 @@ public class Book implements Displayable {
         this.status = "";
         this.quantity = "";
     }
+
     public Book(Book book) {
         this.idBook = book.getIdBook();
         this.bookName = book.getBookName();
@@ -28,7 +26,6 @@ public class Book implements Displayable {
         this.quantity = book.getQuantity();
 
     }
-
 
     public Book(String idBook, String bookName, String author, String categoryBook, String status, String quantity) {
         this.idBook = idBook;
@@ -44,42 +41,31 @@ public class Book implements Displayable {
         this.quantityBorrow = quantityBorrow;
     }
 
-
     public String getIdBook() {
         return idBook;
     }
-
     public void setIdBook(String idBook) {
         this.idBook = idBook;
     }
-
     public String getBookName() {
         return bookName;
     }
-
     public void setBookName(String bookName) {
         this.bookName = bookName;
     }
-
     public String getAuthor() {
         return author;
     }
-
     public void setAuthor(String author) {
         this.author = author;
     }
-
     public String getCategoryBook() {
         return categoryBook;
     }
 
-
-
     public String getStatus() {
         return status;
     }
-
-
     public String getQuantity() {
         return quantity;
     }

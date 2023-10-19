@@ -2,7 +2,6 @@ package list;
 
 import entity.Borrower;
 
-
 public class ListBorrower {
     private NodeBorrower head, tail;
 
@@ -33,11 +32,10 @@ public class ListBorrower {
         NodeBorrower newNode = new NodeBorrower(borrower);
         if (head == null) head = tail = newNode;
         else {
-            tail.setNext(newNode);      // Gán newNode vào cuối danh sách.
-            tail = newNode;               // Cập nhật lại vị trí cuối của danh sách.
+            tail.setNext(newNode);      // gan node vao cuoi danh sach
+            tail = newNode;             // cap nhat lai vi tri cuoi cua danh sach
         }
     }
-
 //    public void deleteNode(NodeBorrower nodeBorrower) {
 //        NodeBorrower tg = head;
 //        NodeBorrower t = tg;
@@ -71,18 +69,15 @@ public class ListBorrower {
                 tg = tg.getNext();
             }
         }
-        if (tg == head) head = head.getNext(); // Nếu node ở đầu danh sách.
+        if (tg == head) head = head.getNext(); // neu node o dau danh sach
         else {
             if (tg.getNext() == null) {
-                t = null; // Nếu node ở cuối danh sách.
+                t = null; // neu node o cuoi danh sach
             } else {
                 t.setNext(tg.getNext());
             }
         }
-
-
     }
-
 
     public void sortById() {
         Borrower tmp;
@@ -105,7 +100,6 @@ public class ListBorrower {
             }
             tg = tg.getNext();
         }
-
     }
     public void sortByName() {
         Borrower tmp;
@@ -128,19 +122,12 @@ public class ListBorrower {
             }
             tg = tg.getNext();
         }
-
     }
-
-
 
     public class NodeBorrower {
         private Borrower info;
         private NodeBorrower next;
 
-//        public NodeBorrower() {
-//            this.info = new Borrower();
-//            next = null;
-//        }
 
         public NodeBorrower(Borrower info) {
             this.info = info;

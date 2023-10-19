@@ -2,17 +2,11 @@ package logic;
 
 import data.BookDat;
 import entity.Book;
-import entity.LoanSlip;
 import list.ListBook;
-import logic.BookLogic;
-import data.BookDat;
-import entity.Book;
 import list.ListBook.NodeBook;
 
 public class BookLogic {
-
-    BookDat bookDat = new BookDat();
-
+    private BookDat bookDat = new BookDat();
 
     public ListBook getList() {
         return bookDat.getList();
@@ -57,7 +51,6 @@ public class BookLogic {
         }
         return false;
     }
-
 
     public ListBook findByName(String bookName) {
         ListBook result = new ListBook();

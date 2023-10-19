@@ -1,22 +1,14 @@
 package service;
 
-
 import entity.Account;
 import logic.BookLogic;
 import logic.BorrowerLogic;
 import logic.LoanSlipLogic;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.InputMismatchException;
-import java.util.List;
 import java.util.Scanner;
-
 import static entity.Account.readAccountsFromFile;
 
 public class Menu {
-
 
     public static void run() {
         Account account = new Account();
@@ -59,6 +51,7 @@ public class Menu {
         System.out.println("|   0. Thoát chương trình.              |");
         System.out.println("-----------------------------------------");
     }
+
     public static void adminMenu(){
         BorrowerManagement borrowerManagement = new BorrowerManagement();
         BookManagement bookManagement = new BookManagement();
@@ -101,6 +94,7 @@ public class Menu {
         } while (true);
 
     }
+
     public static void memberMenu() {
         BorrowerManagement borrowerManagement = new BorrowerManagement();
         BookManagement bookManagement = new BookManagement();
@@ -135,6 +129,7 @@ public class Menu {
         } while (true);
 
     }
+
     public static void searchMenu() {
         BorrowerManagement borrowerManagement = new BorrowerManagement();
         BookManagement bookManagement = new BookManagement();
@@ -188,7 +183,6 @@ public class Menu {
         System.out.println("---------------------------------------------");
         System.out.println("\n----------KẾT THÚC THỐNG KÊ----------------\n");
     }
-
 
     private static int chooseFunction1() {
         System.out.print("Xin mời nhập lựa chọn: ");
