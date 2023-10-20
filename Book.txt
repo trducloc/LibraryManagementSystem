@@ -1,5 +1,4 @@
-111,null,null,null,null,null
 222,Doraemon,fujiko,truyen tranh,20,Kha dung
 333,Giai tich,Nguyen Van A,SGK,15,Kha dung
 444,Van hoc,Nguyen Dinh Thi,SGK,8,Kha dung
-555,Lich su ,Giang Vo,Giang Vo,12,Kha dung
+111,Lich su,Giang Vo,SGK,3,Kha dung

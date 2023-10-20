@@ -15,6 +15,8 @@ public class LoanSlipManagement {
     private LoanSlipLogic loanSlipLogic = new LoanSlipLogic();
     private BookLogic bookLogic = new BookLogic();
     private BorrowerLogic borrowerLogic= new BorrowerLogic();
+    private BorrowerManagement borrowerManagement = new BorrowerManagement();
+    private BookManagement bookManagement = new BookManagement();
     private LocalDate currentDate = LocalDate.now();
     private DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     public void menu() {
@@ -98,9 +100,10 @@ public class LoanSlipManagement {
                     System.out.println("Đã tồn tại mã: " + idLoanSlip);
                 } else if (!idLoanSlip.matches("\\d{3}")) {
                     System.out.println("Mã phiếu mượn phải là một số nguyên có 3 chữ số.");
-                    isExisting = true; // Sử dụng để tiếp tục vòng lặp do-while
+                    isExisting = true;
                 }
             } while (isExisting || idLoanSlip.equals(""));
+            borrowerManagement.showList();
 
             do {
                 System.out.print("Mã người mượn: ");
@@ -125,6 +128,7 @@ public class LoanSlipManagement {
                     System.out.println("Định dạng ngày không hợp lệ. Vui lòng thử lại.");
                 }
             } while (true);
+            bookManagement.showList();
 
             do { System.out.print("Mã sách: ");
                 idBook = new Scanner(System.in).nextLine();
@@ -246,7 +250,7 @@ public class LoanSlipManagement {
     public void sortByQuantityBorrowed() {
         System.out.println();
         System.out.println("-----------------------------------------");
-        System.out.println("| SẮP XẾP DANH SÁCH PHIẾU MƯỢN THEO TÊN |");
+        System.out.println("| SẮP XẾP DANH SÁCH PHIẾU MƯỢN THEO SLM |");
         System.out.println("-------------------***-------------------");
         ListLoanSlip list = loanSlipLogic.getList();
         list.sortByQuantityBorrowed();

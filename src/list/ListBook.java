@@ -38,6 +38,28 @@ public class ListBook {
         }
     }
 
+    public void deleteNode(NodeBook nodeBook) {
+        NodeBook tg = head;
+        NodeBook t = tg;
+        while (tg != null) {
+            if (tg == nodeBook) break;
+            else {
+                t = tg;
+                tg = tg.getNext();
+            }
+        }
+
+        if (tg == null) return; // khong ton tai node
+        if (t != null)          // ton tai
+        {
+            t.setNext(tg.getNext());
+            tg = null;
+        } else // neu la dau danh sach
+        {
+            head = tg.getNext();
+        }
+    }
+
     public void removeNode(NodeBook nodeBook) {
         NodeBook tg = head; // duyet qua danh sach
         NodeBook t = tg; // luu gia tri cua nodebook truoc tg
@@ -86,6 +108,10 @@ public class ListBook {
 
         private Book info;
         private NodeBook next;
+        public NodeBook() {
+            this.info = new Book();
+            next = null;
+        }
 
         public NodeBook(Book info) {
             this.info = info;

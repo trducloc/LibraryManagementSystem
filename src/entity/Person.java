@@ -1,8 +1,7 @@
 package entity;
 
-import java.util.Scanner;
 
-public class Person implements Displayable {
+public abstract class Person implements Displayable {
     private String id;
     private String name;
     private String email;

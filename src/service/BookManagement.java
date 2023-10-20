@@ -26,7 +26,7 @@ public class BookManagement {
             System.out.println("|   5. Tìm kiếm sách.                   |");
             System.out.println("|   6. Sắp xếp danh sách theo tên sách. |");
             System.out.println("|   7. Quay lại menu quản lý chính.     |");
-            System.out.println("|   0. Thoát chương trình.              |");
+            System.out.println("|   0. Đăng xuất.                       |");
             System.out.println("-----------------------------------------");
             int functionChoice = chooseFunction1();
             switch (functionChoice) {
@@ -145,7 +145,7 @@ public class BookManagement {
         System.out.println("|           SỬA THÔNG TIN SÁCH          |");
         System.out.println("-------------------***-------------------");
 
-        String idBook, bookName, categoryBook, author, quantity, status;
+        String idBook, bookName, author, categoryBook, quantity, status;
 
         do {
             System.out.print("Nhập vào mã sách cần sửa: ");
@@ -157,18 +157,19 @@ public class BookManagement {
             System.out.print("Nhập tên sách: ");
             bookName = new Scanner(System.in).nextLine();
 
+            System.out.print("Nhập tên tác giả: ");
+            author = new Scanner(System.in).nextLine();
+
             System.out.print("Nhập thể loại: ");
             categoryBook = new Scanner(System.in).nextLine();
 
-            System.out.print("Nhập tên tác giả: ");
-            author = new Scanner(System.in).nextLine();
 
             System.out.print("Nhập số lượng: ");
             quantity = new Scanner(System.in).nextLine();
 
             System.out.print("Nhập trạng thái: ");
             status = new Scanner(System.in).nextLine();
-            Book book = new Book(idBook, bookName, categoryBook, author, quantity, status);
+            Book book = new Book(idBook, bookName, author, categoryBook, quantity, status);
             bookLogic.fix(book);
         } else {
             System.out.println("Không tồn tại đầu sách có mã: " + idBook);
@@ -188,7 +189,7 @@ public class BookManagement {
             System.out.println("Xóa thành công sách có mã: " + idBook);
         } else {
             System.out.println("Không tồn tại sách có mã: " + idBook);
-            delete();
+
         }
     }
 

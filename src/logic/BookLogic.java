@@ -86,7 +86,7 @@ public class BookLogic {
 //        int count=0;
 //        NodeBook target = bookDat.getList().getHead();
 //        while(target!=null){
-//            if (target.getInfo().getStatus().equalsIgnoreCase("Available"))
+//            if (target.getInfo().getStatus().equalsIgnoreCase("Kha dung"))
 //                count++;
 //            target=target.getNext();
 //        }
