@@ -6,11 +6,10 @@
   + Đồ án này nhằm mục đích thực hành và hiểu rõ về lập trình Java cơ bản. Được viết ra để giải quyết những vấn đề xung quanh việc quản lý thư viện ở một nhà sách, hoặc một trường học.
 
 2. Setup
-   Bước 1: Cài đặt Itellij IDEA và JDK 17 - https://www.jetbrains.com/idea/download/?section=windows
-   Bước 2: Tải xuống hoặc sao chép code từ GitHub sang máy.
-   Bước 3: Chạy trương trình từ hàm main của class "LibraryManagementSystem".
-   Bước 4: Admin ID: admin & Password: password
-   Tải xuống hoặc sao chép code từ GitHub sang máy.
+   + Bước 1: Cài đặt Itellij IDEA và JDK 17 - https://www.jetbrains.com/idea/download/?section=windows
+   + Bước 2: Tải xuống hoặc sao chép code từ GitHub sang máy.
+   + Bước 3: Chạy trương trình từ hàm main của class "LibraryManagementSystem".
+   + Bước 4: Admin ID: admin & Password: password
 
 3. Biểu đồ UML
    a) Biểu đồ Class Diagram
