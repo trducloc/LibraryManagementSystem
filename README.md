@@ -14,6 +14,7 @@
 3. Biểu đồ UML
 
    a) Biểu đồ Class Diagram
+   
    ![image](https://github.com/trducloc/LybraryManagementSystem/blob/master/UML.drawio.png)
    
    Trong biểu đồ này: 
@@ -46,6 +47,7 @@
     các lớp dữ liệu (BookDat, BorrowerDat, LoanSlipDat) để thực hiện thao tác trên dữ liệu.
 
    b) Biểu đồ Sequence Diagram
+   
    ![image](https://github.com/trducloc/LybraryManagementSystem/blob/master/UmlSequenceDiagram.drawio.png)
 
    Trong biểu đồ này:
@@ -61,12 +63,14 @@
    - Tìm kiếm.
    - Thống kê.
 
-55. Chi tiết hoạt động của các chức năng
+5. Chi tiết hoạt động của các chức năng
     
    a) Đăng ký
+   
         Đăng ký tài khoản mới để sử dụng các chức năng của thành viên trong thư viện.
    
    b) Đăng nhập
+   
        Mỗi vai trò trong thư viện sẽ được sử dụng những chức năng khác nhau:
        
         - Với admin:
@@ -83,18 +87,22 @@
                 + Trả sách: Sau khi mượn sách, cần trả trong vòng 7 ngày. Khi cả sẽ cập nhật lại danh sách sách.
    
    c) Đăng xuất
+   
       Sau khi đăng xuất sẽ thoát ra khỏi chương trình.
 
 6. Kết quả
+
    Đồ án Quản lý thư viện đã được triển khai thành công và có thể sử dụng để quản lý thông tin về sách và độc giả trong thư viện.
 
-7. Nhận xét
+8. Nhận xét
    - Dự án đã đạt được các chức năng cơ bản và hoạt động một cách ổn định.
    - Giao diện console được in gọn gàng, dễ nhìn để tăng trải nghiệm người dùng.
    - Cần xem xét thêm một số tính năng. như trả sách, quản lý tồn kho sách và tính phí phạt khi trả sách.
 
-8. Công việc trong tương lai
+9. Công việc trong tương lai
+   
    Dưới đây là danh sách công việc cần thực hiện để phát triển đồ án trong tương lai:
+   
        a) Cải thiện giao diện người dùng.
        b) Cải thiện độ bảo mật khi đăng ký, đăng nhập
        c) Quản lý tồn kho sách một cách chi tiết hơn.
