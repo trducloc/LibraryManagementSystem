@@ -103,10 +103,10 @@
    
    Dưới đây là danh sách công việc cần thực hiện để phát triển đồ án trong tương lai:
    
-       a) Cải thiện giao diện người dùng.
-       b) Cải thiện độ bảo mật khi đăng ký, đăng nhập
-       c) Quản lý tồn kho sách một cách chi tiết hơn.
-       d) Tính phí phạt khi trả sách dựa vào ngày trả muộn và tình trạng sách khi trả.
+       + Cải thiện giao diện người dùng.
+       + Cải thiện độ bảo mật khi đăng ký, đăng nhập
+       + Quản lý tồn kho sách một cách chi tiết hơn.
+       + Tính phí phạt khi trả sách dựa vào ngày trả muộn và tình trạng sách khi trả.
 
    
 
