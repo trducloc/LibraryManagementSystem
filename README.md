@@ -1,17 +1,17 @@
-                     ĐỒ ÁN QUẢN LÝ THƯ VIỆN CONSOLE
-1. Giới thiệu
+                     #ĐỒ ÁN QUẢN LÝ THƯ VIỆN CONSOLE
+##1. Giới thiệu
    
   + Trong xã hội hiện đại, để đáp ứng nhu cầu phát triển các hoạt động giáo dục,khoa học, văn hóa, kinh tế, v.v…, việc đọc sách báo (và các tài liệu khác) với mục đích khai thác, sử dụng thông tin, tri thức, càng ngày càng trở nên cấp thiết. Cùng với đó, số lượt mượn sách hàng ngày trong thư viện đạt đến con số hàng nghìn lượt.Việc quản lý sách được thực hiện thủ công gặp nhiều khó khăn. Vì vậy việc xây dựng chương tình quản lý thông tin liên quan đến việc mượn, trả, tìm kiếm thông tin về sách là một việc cần thiết. Từ đó giúp cho việc quản lý thư viện trở nên thuận tiện và ưu việt hơn.
   
   + Đồ án này nhằm mục đích thực hành và hiểu rõ về lập trình Java cơ bản. Được viết ra để giải quyết những vấn đề xung quanh việc quản lý thư viện ở một nhà sách, hoặc một trường học.
 
-2. Setup
+##2. Setup
    + Bước 1: Cài đặt Itellij IDEA và JDK 17 - https://www.jetbrains.com/idea/download/?section=windows
    + Bước 2: Tải xuống hoặc sao chép code từ GitHub sang máy.
    + Bước 3: Chạy trương trình từ hàm main của class "LibraryManagementSystem".
    + Bước 4: Admin ID: admin & Password: password
 
-3. Biểu đồ UML
+##3. Biểu đồ UML
 
    a) Biểu đồ Class Diagram
    
