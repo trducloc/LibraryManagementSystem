@@ -59,12 +59,14 @@
    - Tìm kiếm.
    - Thống kê.
 
-55. Chi tiết hoạt động của các chức năng
+5. Chi tiết hoạt động của các chức năng
+    
    a) Đăng ký
         Đăng ký tài khoản mới để sử dụng các chức năng của thành viên trong thư viện.
    
    b) Đăng nhập
        Mỗi vai trò trong thư viện sẽ được sử dụng những chức năng khác nhau:
+       
         - Với admin:
                 + Quản lý sách: Có quyền thêm, sửa, xóa sách; Xem, sắp xếp danh sách sách.
                 + Quản lý phiếu mượn: Có quyền thêm, sửa, xóa phiếu mượn; Xem, sắp xếp danh sách phiếu mượn.
