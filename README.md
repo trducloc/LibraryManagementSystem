@@ -5,14 +5,14 @@
   
    Đồ án này nhằm mục đích thực hành và hiểu rõ về lập trình Java cơ bản. Được viết ra để giải quyết những vấn đề xung quanh việc quản lý thư viện ở một nhà sách, hoặc một trường học.
 
-3. Setup
+2. Setup
    Bước 1: Cài đặt Itellij IDEA và JDK 17 - https://www.jetbrains.com/idea/download/?section=windows
    Bước 2: Tải xuống hoặc sao chép code từ GitHub sang máy.
    Bước 3: Chạy trương trình từ hàm main của class "LibraryManagementSystem".
    Bước 4: Admin ID: admin & Password: password
    Tải xuống hoặc sao chép code từ GitHub sang máy.
 
-4. Biểu đồ UML
+3. Biểu đồ UML
    a) Biểu đồ Class Diagram
    ![image](https://github.com/trducloc/LybraryManagementSystem/blob/master/UML.drawio.png)
    
@@ -53,7 +53,7 @@
       + Các lớp Menu, BookManagement, BorrowerManagement, và LoanSlipManagement đại diện cho các chức năng chính của hệ thống và tương tác với các lớp logic và dữ liệu tương ứng.
       + Lớp BookLogic, BorrowerLogic, và LoanSlipLogic thực hiện các nhiệm vụ logic và tương tác với dữ liệu thông qua các lớp dữ liệu tương ứng (BookDat, BorrowerDat, và LoanSlipDat).
 
-5. Các chức năng cơ bản
+4. Các chức năng cơ bản
    - Login
    - Quản lý sách.
    - Quản lý phiếu mượn.
@@ -61,7 +61,7 @@
    - Tìm kiếm.
    - Thống kê.
 
-6. Chi tiết hoạt động của các chức năng
+55. Chi tiết hoạt động của các chức năng
     
    a) Đăng ký
         Đăng ký tài khoản mới để sử dụng các chức năng của thành viên trong thư viện.
@@ -85,15 +85,15 @@
    c) Đăng xuất
       Sau khi đăng xuất sẽ thoát ra khỏi chương trình.
 
-7. Kết quả
+6. Kết quả
    Đồ án Quản lý thư viện đã được triển khai thành công và có thể sử dụng để quản lý thông tin về sách và độc giả trong thư viện.
 
-8. Nhận xét
+7. Nhận xét
    - Dự án đã đạt được các chức năng cơ bản và hoạt động một cách ổn định.
    - Giao diện console được in gọn gàng, dễ nhìn để tăng trải nghiệm người dùng.
    - Cần xem xét thêm một số tính năng. như trả sách, quản lý tồn kho sách và tính phí phạt khi trả sách.
 
-9. Công việc trong tương lai
+8. Công việc trong tương lai
    Dưới đây là danh sách công việc cần thực hiện để phát triển đồ án trong tương lai:
        a) Cải thiện giao diện người dùng.
        b) Cải thiện độ bảo mật khi đăng ký, đăng nhập
