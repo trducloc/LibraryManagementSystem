@@ -12,6 +12,7 @@
    + Bước 4: Admin ID: admin & Password: password
 
 3. Biểu đồ UML
+
    a) Biểu đồ Class Diagram
    ![image](https://github.com/trducloc/LybraryManagementSystem/blob/master/UML.drawio.png)
    
@@ -52,7 +53,7 @@
       + Các lớp Menu, BookManagement, BorrowerManagement, và LoanSlipManagement đại diện cho các chức năng chính của hệ thống và tương tác với các lớp logic và dữ liệu tương ứng.
       + Lớp BookLogic, BorrowerLogic, và LoanSlipLogic thực hiện các nhiệm vụ logic và tương tác với dữ liệu thông qua các lớp dữ liệu tương ứng (BookDat, BorrowerDat, và LoanSlipDat).
 
-4. Các chức năng cơ bản
+5. Các chức năng cơ bản
    - Login
    - Quản lý sách.
    - Quản lý phiếu mượn.
