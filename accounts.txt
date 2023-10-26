@@ -1,3 +1,5 @@
 tranducloc01:Loclinh01
 tranducloc02:Loclinh02
 tranducloc03:Loclinh03
+tranducloc05:Loclinh05
+tranducloc06:Loclinh06
