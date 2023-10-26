@@ -18,9 +18,11 @@
 ## 3. Biểu đồ UML
 
    ### a) Biểu đồ Class Diagram
-   
-   
-   ![image](https://github.com/trducloc/LybraryManagementSystem/blob/master/UML.drawio.png)
+   + Biểu đồ tổng quát
+        ![image](https://github.com/trducloc/LibraryManagementSystem/blob/master/ClassDiagram/ClassDiagramOverview.drawio.png)
+
+   + Biểu đồ chi tiết
+   ![image](https://github.com/trducloc/LibraryManagementSystem/blob/master/ClassDiagram/ClassDiagramDetail.drawio.png)
    
    Trong biểu đồ này: 
    
