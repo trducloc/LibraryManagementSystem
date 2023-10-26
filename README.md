@@ -124,7 +124,15 @@
 
 ## VI. Kết quả
 
-   Đồ án Quản lý thư viện đã được triển khai thành công và có thể sử dụng để quản lý thông tin về sách và độc giả trong thư viện.
+- Đồ án Quản lý thư viện đã được triển khai thành công và có thể sử dụng để quản lý thông tin về sách và độc giả trong thư viện.
+
+- Sau khi hoàn thành môn JAVA CORE ở TECHMASTER, mình đã:
+  + Nắm được kiến thức cơ bản về Java: hiểu về cú pháp, cấu trúc, và các đặc điểm cơ bản của ngôn ngữ lập trình Java.
+  + Có khả năng viết các chương trình đơn giản bằng Java để thực hiện các nhiệm vụ cơ bản.
+  + Hiểu biết về OOP (Lập trình hướng đối tượng): hiểu cách áp dụng các nguyên tắc OOP trong việc thiết kế và phát triển ứng dụng.
+  + Xử lý lỗi: học được cách xử lý lỗi và ngoại lệ trong Java để làm cho ứng dụng ổn định hơn.
+  + Khả năng tìm hiểu thêm: có nền tảng để tìm hiểu về các lĩnh vực khác của Java như phát triển web, ứng dụng di động, hoặc phát triển ứng dụng máy tính cá nhân.
+  + Sẵn sàng kiến thức để áp dụng cho môn học tiếp theo.
 
 ## VII. Nhận xét
    - Dự án đã đạt được các chức năng cơ bản và hoạt động một cách ổn định.
