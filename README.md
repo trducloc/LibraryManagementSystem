@@ -1,12 +1,11 @@
   # ĐỒ ÁN QUẢN LÝ THƯ VIỆN CONSOLE
   
-## 1. Giới thiệu
-   
-   Trong xã hội hiện đại, để đáp ứng nhu cầu phát triển các hoạt động giáo dục,khoa học, văn hóa, kinh tế, v.v…, việc đọc sách báo (và các tài liệu khác) với mục đích khai thác, sử dụng thông tin, tri thức, càng ngày càng trở nên cấp thiết. Cùng với đó, số lượt mượn sách hàng ngày trong thư viện đạt đến con số hàng nghìn lượt.Việc quản lý sách được thực hiện thủ công gặp nhiều khó khăn. Vì vậy việc xây dựng chương tình quản lý thông tin liên quan đến việc mượn, trả, tìm kiếm thông tin về sách là một việc cần thiết. Từ đó giúp cho việc quản lý thư viện trở nên thuận tiện và ưu việt hơn.
+## I. Giới thiệu
+  Trong xã hội hiện đại, để đáp ứng nhu cầu phát triển các hoạt động giáo dục,khoa học, văn hóa, kinh tế, v.v…, việc đọc sách báo (và các tài liệu khác) với mục đích khai thác, sử dụng thông tin, tri thức, càng ngày càng trở nên cấp thiết. Cùng với đó, số lượt mượn sách hàng ngày trong thư viện đạt đến con số hàng nghìn lượt.Việc quản lý sách được thực hiện thủ công gặp nhiều khó khăn. Vì vậy việc xây dựng chương tình quản lý thông tin liên quan đến việc mượn, trả, tìm kiếm thông tin về sách là một việc cần thiết. Từ đó giúp cho việc quản lý thư viện trở nên thuận tiện và ưu việt hơn.
   
-   Đồ án này nhằm mục đích thực hành và hiểu rõ về lập trình Java cơ bản. Được viết ra để giải quyết những vấn đề xung quanh việc quản lý thư viện ở một nhà sách, hoặc một trường học.
+  Đồ án này nhằm mục đích thực hành và hiểu rõ về lập trình Java cơ bản. Được viết ra để giải quyết những vấn đề xung quanh việc quản lý thư viện ở một nhà sách, hoặc một trường học.
 
-## 2. Setup
+## II. Setup
    **Bước 1:**  Cài đặt Itellij IDEA và JDK 17 - https://www.jetbrains.com/idea/download/?section=windows
      
    **Bước 2:** Tải xuống hoặc sao chép code từ GitHub sang máy.
@@ -15,13 +14,42 @@
      
    **Bước 4:** Admin ID: admin & Password: password
 
-## 3. Biểu đồ UML
+## III. Biểu đồ UML
 
-   ### a) Biểu đồ Class Diagram
-   + Biểu đồ tổng quát
-        ![image](https://github.com/trducloc/LibraryManagementSystem/blob/master/ClassDiagram/ClassDiagramOverview.drawio.png)
+   ### 1. Biểu đồ Class Diagram
+   **a) Biểu đồ tổng quát**
+   
+  ![image](https://github.com/trducloc/LibraryManagementSystem/blob/master/ClassDiagram/ClassDiagramOverview.drawio.png)
 
-   + Biểu đồ chi tiết
+  Trong biểu đồ này:
+- Package data: Đây là gói chứa các lớp liên quan đến dữ liệu và lưu trữ dữ liệu.
+  + BookDat: Đại diện cho lớp quản lý dữ liệu về sách.
+  + BorrowerDat: Đại diện cho lớp quản lý dữ liệu về người mượn sách.
+  + LoanSlipDat: Đại diện cho lớp quản lý dữ liệu về phiếu mượn sách.
+- Package entity: Chứa các lớp đại diện cho các thực thể trong hệ thống.
+  + Account: Đại diện cho lớp quản lý tài khoản người dùng.
+  + Book: Đại diện cho lớp sách.
+  + Borrower: Đại diện cho lớp người mượn sách.
+  + LoanSlip: Đại diện cho lớp phiếu mượn sách.
+- Package list: Chứa các lớp liên quan đến danh sách và quản lý danh sách.
+  + ListBook và NodeBook: Đại diện cho lớp danh sách sách và nút trong danh sách sách.
+  + ListBorrower và NodeBorrower: Đại diện cho lớp danh sách người mượn và nút trong danh sách người mượn.
+  + ListLoanSlip và NodeLoanSlip: Đại diện cho lớp danh sách phiếu mượn và nút trong danh sách phiếu mượn.
+- Package service: Chứa các lớp liên quan đến việc quản lý dịch vụ của hệ thống.
+  + BookManagement: Đại diện cho quản lý sách.
+  + BorrowerManagement: Đại diện cho quản lý người mượn sách.
+  + LoanSlipManagement: Đại diện cho quản lý phiếu mượn sách.
+  + Menu: Đại diện cho quản lý menu hệ thống.
+- Package logic: Chứa các lớp chứa logic xử lý dữ liệu và quản lý.
+  + BookLogic: Đại diện cho logic liên quan đến sách.
+  + BorrowerLogic: Đại diện cho logic liên quan đến người mượn sách.
+  + LoanSlipLogic: Đại diện cho logic liên quan đến phiếu mượn sách.
+- Class LibraryManagementSystem: Đây là lớp gốc của hệ thống, chứa phương thức main để khởi chạy ứng dụng.
+
+
+
+   **b) Biểu đồ chi tiết**
+     
    ![image](https://github.com/trducloc/LibraryManagementSystem/blob/master/ClassDiagram/ClassDiagramDetail.drawio.png)
    
    Trong biểu đồ này: 
@@ -54,7 +82,7 @@
     (BookManagement), người mượn (BorrowerManagement) và phiếu mượn sách (LoanSlipManagement) để thực hiện các chức năng cụ thể. Các lớp xử lý logic (BookLogic, BorrowerLogic, LoanSlipLogic) gửi yêu cầu tới 
     các lớp dữ liệu (BookDat, BorrowerDat, LoanSlipDat) để thực hiện thao tác trên dữ liệu.
 
- ### b) Biểu đồ Sequence Diagram
+ ### 2. Biểu đồ Sequence Diagram
  
    
    ![image](https://github.com/trducloc/LybraryManagementSystem/blob/master/UmlSequenceDiagram.drawio.png)
@@ -63,7 +91,7 @@
   - Các lớp Menu, BookManagement, BorrowerManagement, và LoanSlipManagement đại diện cho các chức năng chính của hệ thống và tương tác với các lớp logic và dữ liệu tương ứng.
   - Lớp BookLogic, BorrowerLogic, và LoanSlipLogic thực hiện các nhiệm vụ logic và tương tác với dữ liệu thông qua các lớp dữ liệu tương ứng (BookDat, BorrowerDat, và LoanSlipDat).
 
-## 4. Các chức năng cơ bản
+## IV. Các chức năng cơ bản
    - Login
    - Quản lý sách.
    - Quản lý phiếu mượn.
@@ -71,12 +99,12 @@
    - Tìm kiếm.
    - Thống kê.
 
-## 5. Chi tiết hoạt động của các chức năng
+## V. Chi tiết hoạt động của các chức năng
     
-   ### a) Đăng ký
+   ### 1. Đăng ký
    Đăng ký tài khoản mới để sử dụng các chức năng của thành viên trong thư viện.
    
-   ### b) Đăng nhập
+   ### 2. Đăng nhập
    Mỗi vai trò trong thư viện sẽ được sử dụng những chức năng khác nhau:
   - Với admin:
       - Quản lý sách: Có quyền thêm, sửa, xóa sách; Xem, sắp xếp danh sách sách.
@@ -91,19 +119,19 @@
       - Mượn sách: Sau khi xem danh sách sách, có thể mượn sách dựa trên số sách khả dụng trong thư viện.
       - Trả sách: Sau khi mượn sách, cần trả trong vòng 7 ngày. Khi cả sẽ cập nhật lại danh sách sách.
    
-   ### c) Đăng xuất
+   ### 3. Đăng xuất
    Sau khi đăng xuất sẽ thoát ra khỏi chương trình.
 
-## 6. Kết quả
+## VI. Kết quả
 
    Đồ án Quản lý thư viện đã được triển khai thành công và có thể sử dụng để quản lý thông tin về sách và độc giả trong thư viện.
 
-## 7. Nhận xét
+## VII. Nhận xét
    - Dự án đã đạt được các chức năng cơ bản và hoạt động một cách ổn định.
    - Giao diện console được in gọn gàng, dễ nhìn để tăng trải nghiệm người dùng.
    - Cần xem xét thêm một số tính năng. như trả sách, quản lý tồn kho sách và tính phí phạt khi trả sách.
 
-## 8. Công việc trong tương lai
+## VIII. Công việc trong tương lai
    
    Dưới đây là danh sách công việc cần thực hiện để phát triển đồ án trong tương lai:
    - Cải thiện giao diện người dùng.
