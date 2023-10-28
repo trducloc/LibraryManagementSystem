@@ -16,7 +16,11 @@
 
 ## III. Biểu đồ UML
 
-### . Biểu đồ Sequence Diagram
+### 1. Biểu đồ User Case
+
+   ![image](https://github.com/trducloc/LibraryManagementSystem/blob/master/ClassDiagram/UserCase.drawio.png)
+
+### 2. Biểu đồ Sequence Diagram
  
    
    ![image](https://github.com/trducloc/LybraryManagementSystem/blob/master/UmlSequenceDiagram.drawio.png)
@@ -26,7 +30,7 @@
   - Các lớp Menu, BookManagement, BorrowerManagement, và LoanSlipManagement đại diện cho các chức năng chính của hệ thống và tương tác với các lớp logic và dữ liệu tương ứng.
   - Lớp BookLogic, BorrowerLogic, và LoanSlipLogic thực hiện các nhiệm vụ logic và tương tác với dữ liệu thông qua các lớp dữ liệu tương ứng (BookDat, BorrowerDat, và LoanSlipDat).
 
-   ### 2. Biểu đồ Class Diagram
+   ### 3. Biểu đồ Class Diagram
    **a) Biểu đồ tổng quát**
    
   ![image](https://github.com/trducloc/LibraryManagementSystem/blob/master/ClassDiagram/ClassDiagramOverview.drawio.png)
