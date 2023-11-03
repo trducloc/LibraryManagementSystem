@@ -133,6 +133,11 @@
   + Xử lý lỗi: học được cách xử lý lỗi và ngoại lệ trong Java để làm cho ứng dụng ổn định hơn.
   + Khả năng tìm hiểu thêm: có nền tảng để tìm hiểu về các lĩnh vực khác của Java như phát triển web, ứng dụng di động, hoặc phát triển ứng dụng máy tính cá nhân.
   + Sẵn sàng kiến thức để áp dụng cho môn học tiếp theo.
+    
+**Demo Link**
+
+  + https://www.youtube.com/watch?v=ytJYelmxkPw
+  + https://docs.google.com/document/d/1MdJYWBW2GCpEthqQd7VNS0z-_g-nODlr--sngBEt6GI/edit
 
 ## VII. Nhận xét
    - Dự án đã đạt được các chức năng cơ bản và hoạt động một cách ổn định.
